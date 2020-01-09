@@ -30,7 +30,7 @@ jobs:
         key: portable_osquery_submodules
 
     - name: Build
-      run: ./scripts/build_release.sh --portable-osquery
+      run: ./scripts/build_release.sh --portable-osquery --package-only
 
     - name: Locate DEB package
       id: locate_deb_package
